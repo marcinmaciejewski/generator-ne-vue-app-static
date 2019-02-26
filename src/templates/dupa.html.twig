@@ -1,1 +1,31 @@
-<h1>dupa</h1>
+<!doctype html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Example twig file</title>
+</head>
+
+<body>
+    <h1>Text: {{data.text}}</h1>
+    <h1>Number: {{twigVariable}}</h1>
+    <h1 class="oswald-title">This is oswald font</h1>
+    <div class="columns-2">
+        <div class="columns-2__column">
+            <img class="earth-image" src="/images/earth.jpg" alt="Earth is goddamn flat">
+        </div>
+        <div class="columns-2__column">
+            <div class="background-earth"></div>
+        </div>
+    </div>
+    <hr>
+        <a href="/media/pdf/pdf.pdf">Example pdf</a>
+    <hr>
+    <video src="/media/video/sample.mp4" controls></video>
+    <div${% require('./components/footer.html.twig') %}</div>
+</body>
+
+</html>
