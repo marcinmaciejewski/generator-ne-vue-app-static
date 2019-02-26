@@ -31,6 +31,7 @@
     "sass-lint-webpack": "^1.0.0",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
+    "twig-loader": "^0.4.1",
     "url-loader": "^1.1.2",
     "webfonts-loader": "^4.3.0",
     "webpack": "^4.29.0",

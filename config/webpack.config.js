@@ -22,6 +22,13 @@ const webpackBaseConfig = {
     module: {
         rules: [
             {
+                test: /\.twig$/,
+                loader: 'twig-loader',
+                options: {
+                    // See options section below
+                },
+            },
+            {
                 test: /\.html$/,
                 use: [
                     {
@@ -126,7 +133,10 @@ templates.forEach((template) => {
     webpackBaseConfig.plugins.push(
         new HtmlWebPackPlugin({
             template: template,
-            filename: template.substring(4),
+            // if the path is 'src/file-name.html.twig'
+            // we want to cut 'src/' and '.twig'
+            // to cerate new file with correct name
+            filename: template.substring(4).slice(0, -5),
         })
     );
 });
